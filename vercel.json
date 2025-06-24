@@ -1,21 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/index.php",
-        "use": "@juicyfx/php"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "api/index.php"
-      }
-    ],
-    "functions": {
-      "api/index.php": {
-        "runtime": "vercel-php@0.7.3"
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@juicyfx/php"
     }
-  }
-  
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.php"
+    }
+  ]
+}
