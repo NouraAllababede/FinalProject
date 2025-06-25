@@ -1,14 +1,16 @@
-   {
-     "functions": {
-       "api/*.php": {
-         "runtime": "vercel-php@0.7.3"
-       }
-     },
-     "routes": [
-       { "src": "/(.*)",  "dest": "/api/index.php" }
-     ],
-     "outputDirectory": "dist" // تأكد من أن هذا هو المسار الصحيح
-   }
+  {
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
+}
    
 
    
