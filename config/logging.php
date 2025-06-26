@@ -72,6 +72,14 @@ return [
             'days' => 14,
             'replace_placeholders' => true,
         ],
+    'stderr' => [
+            'driver' => 'monolog',
+            'handler' => StreamHandler::class,
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+            'level' => 'debug',
+        ],
 
        /* 'slack' => [
             'driver' => 'slack',
